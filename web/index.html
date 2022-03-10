@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- O meu CSS --><link rel="stylesheet" href="estilo.css" >
+         <style> 
+             body{
+                 margin: auto;
+                 margin-top: 20px;
+                 margin-bottom: 300px;
+                 background-color: lightblue;
+             
+             }
+             
+             h1{
+                 
+                 text-align: center;
+             }
+             card-img-top{
+                 background-color: lightblue;
+                 align-content: center;
+             }
+                div{
+                 margin: auto;
+                background-color: lightcyan;
+                }
+                
+            
+            
+             
+           
+
+</style>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+  
+  
+  
+        <body>
+   
+            <h1> Figuras Geometricas </h1>
+      
+            
+            
+     <!--CIRCUNFERENCIA/TRIANGULO/QUADRADO + CONTAINERS-->
+    <div class="container">
+        <div class="row">
+            <div class="col-auto-center">
+   <div class="card-deck" style="background-color: lightblue">
+                
+       
+       
+       <!--CIRCUNFERENCIA--> 
+                <div class="card">
+    <img class="card-img-top" src="img/circulo.png" width=50px >
+    <div class="card-body" >
+      <h5 class="card-title">Calcular Circunferência</h5>
+      <p class="card-text">Insira os dados em baixo, consoante o que deseja calcular</p>
+       <form method="post" action="areacirculo" autocomplete="off">
+      <p>Valor de r:</p>
+      <p>
+        <input type="text" name="r"> cm
+      </p>
+      <input type="submit" value="Calcular Apenas a Área">
+    </form>
+      <p> </p> 
+    
+    <form method="post" action="perimetrocirculo" autocomplete="off">
+      <p>Valor de r:</p>
+      <p>
+        <input type="text" name="r"> cm
+      </p>
+      <input type="submit" value="Calcular Apenas Perimetro">
+    </form>
+     <p> </p> 
+    <form method="post" action="Circulo" autocomplete="off">
+      <p>Valor de r:</p>
+      <p>
+        <input type="text" name="r"> cm
+      </p>
+      <input type="submit" value="Calcular Tudo">
+    </form>
+    </div>
+  </div>
+ 
+                    <!--TRIANGULO--> 
+                  <div class="card">
+               <img class="card-img-top" src="img/triangulo.png" width=100px">
+               <div class="card-body">
+                 <h5 class="card-title">Calcular Triangulo</h5>
+                 <p class="card-text">Insira os dados em baixo, consoante o que deseja calcular</p>
+
+
+                 <form method="post" action="areatriangulo" autocomplete="off">
+                 <p>Valor de lado do Triangulo: </p>
+                 <p>
+                   <input type="text" name="l"> cm
+                 </p>
+                 <input type="submit" value="Calcular Apenas a Área">
+               </form>
+               <p> </p>
+                <form method="post" action="perimetrotriangulo" autocomplete="off">
+                 <p>Valor de lado do Triangulo: </p>
+                 <p>
+                   <input type="text" name="l"> cm
+                 </p>
+                 <input type="submit" value="Calcular Apenas o perimetro">
+               </form>
+                 <p> </p>
+
+               <form method="post" action="Triangulo" autocomplete="off">
+                 <p>Valor de lado do Triangulo:</p>
+                 <p>
+                   <input type="text" name="l"> cm
+                 </p>
+                 <input type="submit" value="Calcular Tudo">
+               </form>
+               </div>
+             </div> 
+
+      
+       
+       
+                    <!--QUADRADO-->  
+                    <div class="card">
+                   <img class="card-img-top" src="img/quadrado.png" width=10%">
+                 <div class="card-body" >
+                   <h5 class="card-title">Calcular Quadrado</h5>
+                   <p class="card-text">Insira os dados em baixo, consoante o que deseja calcular</p>
+
+
+                 <form method="post" action="areaquadrado" autocomplete="off">
+                   <p>Valor de lado do Quadrado: </p>
+                   <p>
+                     <input type="text" name="l"> cm
+                   </p>
+                   <input type="submit" value="Calcular Apenas a Área">
+                 </form>
+                   <p>   </p>
+
+                  <form method="post" action="perimetroquadrado" autocomplete="off">
+                   <p>Valor de lado do Quadrado: </p>
+                   <p>
+                     <input type="text" name="l"> cm
+                   </p>
+                   <input type="submit" value="Calcular Apenas o perimetro">
+                 </form>
+                   <p>   </p>
+
+                 <form method="post" action="Quadrado" autocomplete="off">
+                   <p>Valor de lado do Quadrado: </p>
+                   <p>
+                     <input type="text" name="l"> cm
+                   </p>
+                   <input type="submit" value="Calcular Tudo">
+                 </form>
+                 </div>
+                </div> 
+   </div>
+   </div>
+   </div>  
+  </div>  
+      
+      
+      
+      
+      
+      <p> </p>
+      <p> </p>
+      <p> </p>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!--RETANGULO/PENTAGONO/HEXAGONO/LOSANGULO + CONTAINERS-->
+       <div class="container ">      
+        <div class="row">
+            <div class="col-auto-center">
+               <div class="card-deck" style="background-color: lightblue">      
+  
+                
+                
+                
+              
+             
+                  
+                  
+              <!--RETANGULO--> 
+             <div class="card">
+        <img class="card-img-top" src="img/retangulo.png" width=100px">
+        <div class="card-body" >
+          <h5 class="card-title">Calcular Retangulo</h5>
+          <p class="card-text">Insira os dados em baixo, consoante o que deseja calcular</p>
+           <form method="post" action="arearetangulo" autocomplete="off">
+          <p>Valor de altura (lado menor):</p>
+          <p>Valor de base (lado maior):</p>
+         <p> Altura <input type="text" name="a"> cm </p>
+         <p>  Base  <input type="text" name="l"> cm </p>
+        <input type="submit" value="Calcular Apenas a Área">
+        </form>
+          <p> </p> 
+
+        <form method="post" action="perimetroretangulo" autocomplete="off">
+        <p>Valor de altura (lado menor):</p>
+          <p>Valor de base (lado maior):</p>
+         <p> Altura <input type="text" name="a"> cm </p>
+         <p>  Base  <input type="text" name="l"> cm </p>
+          <input type="submit" value="Calcular Apenas Perimetro">
+        </form>
+
+
+         <p> </p> 
+        <form method="post" action="Retangulo" autocomplete="off">
+             <p>Valor de altura (lado menor):</p>
+          <p>Valor de base (lado maior):</p>
+         <p> Altura <input type="text" name="a"> cm </p>
+         <p>  Base  <input type="text" name="l"> cm </p>
+          <input type="submit" value="Calcular Tudo">
+        </form>
+        </div>
+      </div>
+
+
+            <!--PENTAGONO--> 
+            <div class="card">
+        <img class="card-img-top" src="img/pentagono.png" width=100px">
+        <div class="card-body" >
+          <h5 class="card-title">Calcular Pentagono</h5>
+          <p class="card-text">Insira os dados em baixo, consoante o que deseja calcular</p>
+
+
+          <form method="post" action="areapentagono" autocomplete="off">
+          <p>Valor de lado do Pentagono:</p>
+        <p><input type="text" name="l"> cm </p>
+
+        <input type="submit" value="Calcular Apenas a Área">
+        </form>
+             <p> </p>
+
+
+        <form method="post" action="perimetropentagono" autocomplete="off">
+          <p>Valor de lado do Pentagono: </p>
+         <p><input type="text" name="l"> cm </p>
+          <input type="submit" value="Calcular Apenas o perimetro">
+        </form>
+          <p> </p>
+
+        <form method="post" action="Pentagono" autocomplete="off">
+          <p>Valor de lado do Pentagono: </p>
+        <p><input type="text" name="l"> cm </p>
+          <input type="submit" value="Calcular Tudo">
+        </form>
+
+
+
+
+
+
+        </div>
+      </div> 
+
+            <!--HEXAGONO-->  
+            <div class="card">
+        <img class="card-img-top" src="img/Hexagono.png" width=100px">
+        <div class="card-body" >
+          <h5 class="card-title">Calcular Hexagono</h5>
+          <p class="card-text">Insira os dados em baixo, consoante o que deseja calcular</p>
+
+
+          <form method="post" action="areahexagono" autocomplete="off">
+          <p>Valor de lado Hexagono: </p>
+        <p><input type="text" name="l"> cm </p>
+        <input type="submit" value="Calcular Apenas a Área">
+        </form>
+             <p> </p>
+
+
+        <form method="post" action="perimetrohexagono" autocomplete="off">
+          <p>Valor de lado Hexagono:    </p>
+         <p><input type="text" name="l"> cm </p>
+          <input type="submit" value="Calcular Apenas o perimetro">
+        </form>
+          <p> </p>
+
+        <form method="post" action="Hexagono" autocomplete="off">
+          <p>Valor de lado Hexagono:</p>
+        <p><input type="text" name="l"> cm </p>
+          <input type="submit" value="Calcular Tudo">
+        </form>
+
+
+
+
+
+
+        </div>
+      </div>
+
+           <!--LOSANGULO-->
+           <div class="card">
+          <img class="card-img-top" src="img/losango.png" width=10%">
+        <div class="card-body">
+          <h5 class="card-title">Calcular Losangulo com diagonais iguais</h5>
+          <p class="card-text">Insira os dados em baixo, consoante o que deseja calcular</p>
+
+
+        <form method="post" action="arealosangulo" autocomplete="off">
+          <p>Valor de lado do Losangulo:  </p>
+          <p>
+            <input type="text" name="l"> cm
+          </p>
+          <input type="submit" value="Calcular Apenas a Área">
+        </form>
+          <p>   </p>
+
+         <form method="post" action="perimetrolosangulo" autocomplete="off">
+          <p>Valor de lado do Losangulo: </p>
+          <p>
+            <input type="text" name="l"> cm
+          </p>
+          <input type="submit" value="Calcular Apenas o perimetro">
+        </form>
+          <p>   </p>
+
+        <form method="post" action="Losangulo" autocomplete="off">
+          <p>Valor de lado do Losangulo: </p>
+          <p>
+            <input type="text" name="l"> cm
+          </p>
+          <input type="submit" value="Calcular Tudo">
+        </form>
+        </div>
+       </div> 
+
+      
+      
+    
+   </div>
+   </div>
+   </div>  
+      </div>  
+      
+      
+          
+        
+        
+        
+        
+        
+        
+        
+        
+       
+
+   
+   
+   
+     
+      
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+ </body>
+</html>
